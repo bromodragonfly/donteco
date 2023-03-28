@@ -1,0 +1,116 @@
+{
+    "containers": [
+        {
+            "id": 1,
+            "parentId": null,
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080,
+            "effect": "none",
+            "color": "#fcba03"
+        },
+        {
+            "id": 2,
+            "parentId": 1,
+            "x": 100,
+            "y": 100,
+            "width": 600,
+            "height": 300,
+            "effect": "none",
+            "color": "#4e948b"
+        },
+        {
+            "id": 3,
+            "parentId": 1,
+            "x": 600,
+            "y": 600,
+            "width": 400,
+            "height": 250,
+            "effect": "crossfade",
+            "color": "#9438a1"
+        }
+    ],
+    "widgets": [
+        {
+            "type": "image",
+            "id": 1,
+            "name": "image1",
+            "containerId": 1,
+            "duration": {
+                "value": 5000,
+                "untilDone": true
+            },
+            "objectFit": "cover",
+            "fileName": "img1.jpg",
+            "order": 1
+        },
+        {
+            "type": "image",
+            "id": 2,
+            "name": "image2",
+            "containerId": 3,
+            "duration": {
+                "value": 5000,
+                "untilDone": false
+            },
+            "objectFit": "cover",
+            "fileName": "img2.png",
+            "order": 3
+        },
+        {
+            "type": "image",
+            "id": 3,
+            "name": "image3",
+            "containerId": 3,
+            "duration": {
+                "value": 5000,
+                "untilDone": false
+            },
+            "objectFit": "fill",
+            "fileName": "img3.jpg",
+            "order": 1
+        },
+        {
+            "type": "image",
+            "id": 4,
+            "name": "image4",
+            "containerId": 3,
+            "duration": {
+                "value": 5000,
+                "untilDone": false
+            },
+            "objectFit": "contain",
+            "fileName": "img4.jpg",
+            "order": 2
+        },
+        {
+            "type": "video",
+            "id": 5,
+            "name": "video1",
+            "containerId": 2,
+            "duration": {
+                "value": 10000,
+                "untilDone": false
+            },
+            "objectFit": "contain",
+            "fileName": "video1.mp4",
+            "order": 2,
+            "mute": true
+        },
+        {
+            "type": "video",
+            "id": 6,
+            "name": "video2",
+            "containerId": 2,
+            "duration": {
+                "value": 10000,
+                "untilDone": true
+            },
+            "objectFit": "cover",
+            "fileName": "video2.mp4",
+            "order": 1,
+            "mute": false
+        }
+    ]
+}
